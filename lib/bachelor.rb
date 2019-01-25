@@ -49,8 +49,6 @@ def get_average_age_for_season(data, season)
   average_age = []
     data[season].each do |attribute|
         average_age << attribute["age"]
-         end
-           end
-  return first_name
-  end
+    end
+  return average_age
 end
