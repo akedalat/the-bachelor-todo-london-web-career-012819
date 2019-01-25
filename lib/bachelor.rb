@@ -22,7 +22,17 @@ return name
 end
 
 def count_contestants_by_hometown(data, hometown)
-  # code here
+  counter = 0
+    data.each do |k, v|
+      v.each do |attribute|
+        if attribute["hometown"] == hometown
+        counter += 1
+      else
+        counter 
+        end
+      end
+    end
+return name
 end
 
 def get_occupation(data, hometown)
