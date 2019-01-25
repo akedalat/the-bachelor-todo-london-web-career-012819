@@ -6,6 +6,7 @@ first_name = ""
          first_name = attribute["name"].split.first
        end
          end
+<<<<<<< HEAD
 return first_name
 end
 
@@ -18,6 +19,19 @@ def get_contestant_name(data, occupation)
         end
       end
     end
+=======
+return name_name
+end
+
+def get_contestant_name(data, occupation)
+  first_name = ""
+    data.each do |attribute|
+          #binding.pry
+         if attribute["occupation"] == occupation
+           name = attribute["name"]
+         end
+           end
+>>>>>>> 7b6208c07bf450525bb4f67042990bdc781c8b96
   return name
 end
 
