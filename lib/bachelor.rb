@@ -28,7 +28,7 @@ def count_contestants_by_hometown(data, hometown)
         if attribute["hometown"] == hometown
         counter += 1
       else
-        counter 
+        counter
         end
       end
     end
