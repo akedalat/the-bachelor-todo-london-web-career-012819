@@ -56,6 +56,6 @@ def get_average_age_for_season(data, season)
       age_array.each do |n|
         int_array << n.to_i
       end
-  int_array.each {|n|n +=sum}
-  return int_array.sum / int_array.size
+  int_array.each {|n| sum += n.to_f}
+  return sum / int_array.size
 end
