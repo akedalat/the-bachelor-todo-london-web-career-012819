@@ -58,5 +58,5 @@ def get_average_age_for_season(data, season)
       end
   int_array.each {|n| sum += n}
   #binding.pry
-  return sum / int_array.size
+  return sum / int_array.size.to_f
 end
