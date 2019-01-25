@@ -27,7 +27,7 @@ def count_contestants_by_hometown(data, hometown)
       v.each do |attribute|
         if attribute["hometown"] == hometown
         counter += 1
-      else
+        else
         counter
         end
       end
