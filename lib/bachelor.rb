@@ -36,15 +36,13 @@ return counter
 end
 
 def get_occupation(data, hometown)
-  occupation = ""
     data.each do |k, v|
       v.each do |attribute|
         if attribute["hometown"] == hometown
-      occupation = attribute["occupation"]
+      return attribute["occupation"]
         end
       end
     end
-return occupation
 end
 
 def get_average_age_for_season(data, season)
