@@ -48,12 +48,14 @@ end
 def get_average_age_for_season(data, season)
   age_array = []
   int_array = []
+  sum = 0
     data[season].each do |attribute|
         age_array << attribute["age"]
     end
     #binding.pry
-  age_array.each do |n|
-  int_array << n.to_i
-  end
+      age_array.each do |n|
+        int_array << n.to_i
+      end
+  int_array.each {|n|n +=sum}
   return int_array.sum / int_array.size
 end
