@@ -52,9 +52,8 @@ def get_average_age_for_season(data, season)
         age_array << attribute["age"]
     end
     #binding.pry
-  age_array.map do |n|
+  age_array.each do |n|
   int_array << n.to_f
-
   end
   binding.pry
 end
