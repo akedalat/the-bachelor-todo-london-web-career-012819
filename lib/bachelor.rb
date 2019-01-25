@@ -51,5 +51,5 @@ def get_average_age_for_season(data, season)
         age_array << attribute["age"]
     end
     binding.pry
-  age_array.map 
+  age_array.map
 end
